@@ -2,7 +2,7 @@
 function getRepositories() {
   const req = new XMLHttpRequest();
   req.addEventListener('load', showRepositories);
-  req.open('GET', 'https://api.github.com/users/octocat/repos?page=1&per_page=30');
+  req.open('GET', 'https://api.github.com/users/dianabaro/repos?page=1&per_page=30');
   req.send();
 }
 
@@ -26,7 +26,7 @@ function getCommits(el) {
   const name = el.dataset.repo;
   const req = new XMLHttpRequest();
   req.addEventListener('load', showCommits);
-  req.open('GET', 'https://api.github.com/repos/octocat/' + name + '/commits');
+  req.open('GET', 'https://api.github.com/repos/dianabaro/' + name + '/commits');
   req.send();
 }
 
