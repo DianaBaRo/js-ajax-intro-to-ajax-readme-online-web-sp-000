@@ -2,7 +2,7 @@
 function getRepositories() {
   const req = new XMLHttpRequest();
   req.addEventListener('load', showRepositories);
-  req.open('GET', 'https://api.github.com/users/dianabaro/repos?page=1&per_page=30');
+  req.open('GET', 'https://api.github.com/users/dianabaro/repos?page=2&per_page=100');
   req.send();
 }
 
